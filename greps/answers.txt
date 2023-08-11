@@ -1,5 +1,6 @@
 # Part 1
 ### a)
+### b)
 ggrep -P "blas" forest/filescan_00.1 > captured/blastoise.txt
 ggrep -P "^butt" forest/filescan_00.1 > captured/butterfree.txt
 ggrep -P "^beed" forest/filescan_00.1 > captured/beedrill.txt
@@ -19,12 +20,24 @@ ggrep -P "^psy" forest/filescan_00.4 > captured/psyduck.txt
 ggrep -P "^venu" forest/filescan_00.4 > captured/venusaur.txt
 ggrep -P "^squi" forest/filescan_00.4 > captured/squirtle.txt
 
-### b)
+
+### c)
+Forest 1: Blastoise, Butterfree, Beedrill, Bulbasaur
+Forest 2: Charizard, Charmeleon, Charmander
+Forest 3: Pikachu, Jigglypuff, Ivysaur, Meowth
+Forest 4: Wartortle, Psyduck, Venusaur, Squirtle
+
+
+
+
+# Part 2
+### a)
 this following lines shows me how many pokemon there are
 cd captured
 ggrep -P "zcw|quu" < ./* -c
 
-### c)
+
+### b)
 
 this following line shows me how many lines per file match the regex
 ggrep -P -r -c ".*" captured/
@@ -34,28 +47,6 @@ wc -l captured/*
 
 using this command, we know that the three biggest pokemon by number
 of lines is charizard, pikachu, beedrill
-
-
-
-
-
-
-
-
-
-
-
-
-# Part 2
-### a)
-
-
-
-
-
-
-### b)
-
 
 
 
